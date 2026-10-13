@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+dataset/
+
+# Dataset and generated artifacts
+dataset/raw/*
+!dataset/raw/.gitkeep
+dataset/processed/*
+checkpoints/*
+!checkpoints/.gitkeep
+results/plots/*
+results/confusion_matrices/*
+results/*.txt
+results/*.csv
+!results/.gitkeep
+.ipynb_checkpoints/
