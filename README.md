@@ -182,15 +182,15 @@ To stop Streamlit, return to the terminal and press `Ctrl + C`.
 
 ## 😀 Emotion Classes
 
-| Class | Display Name | Emoji |
-|---|---|---|
-| `angry` | Angry | 😠 |
-| `disgust` | Disgust | 🤢 |
-| `fear` | Fear | 😨 |
-| `happy` | Happy | 😄 |
-| `neutral` | Neutral | 😐 |
-| `sad` | Sad | 😢 |
-| `surprise` | Surprise | 😲 |
+| Class      | Display Name | Emoji |
+| ---------- | ------------ | ----- |
+| `angry`    | Angry        | 😠    |
+| `disgust`  | Disgust      | 🤢    |
+| `fear`     | Fear         | 😨    |
+| `happy`    | Happy        | 😄    |
+| `neutral`  | Neutral      | 😐    |
+| `sad`      | Sad          | 😢    |
+| `surprise` | Surprise     | 😲    |
 
 The emoji corresponds to the predicted class. The confidence score is the model's output score, not a guarantee that the prediction is correct.
 
@@ -198,22 +198,22 @@ The emoji corresponds to the predicted class. The confidence score is the model'
 
 ## 🛠 Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| Python | Main programming language |
-| PyTorch | Deep learning and model inference |
-| Torchvision | Image transformations and model utilities |
-| OpenCV | Face detection and webcam processing |
-| Streamlit | Web application interface |
-| Streamlit-WebRTC | Live browser-based camera streaming |
-| PyAV (`av`) | Video frame processing |
-| Pillow | Image loading and processing |
-| NumPy | Numerical operations |
-| Scikit-learn | Evaluation metrics and data splitting |
-| Pandas | Data and report processing |
-| Matplotlib | Confusion matrix visualization |
-| Seaborn | Visualization support |
-| tqdm | Training progress bars |
+| Technology       | Purpose                                   |
+| ---------------- | ----------------------------------------- |
+| Python           | Main programming language                 |
+| PyTorch          | Deep learning and model inference         |
+| Torchvision      | Image transformations and model utilities |
+| OpenCV           | Face detection and webcam processing      |
+| Streamlit        | Web application interface                 |
+| Streamlit-WebRTC | Live browser-based camera streaming       |
+| PyAV (`av`)      | Video frame processing                    |
+| Pillow           | Image loading and processing              |
+| NumPy            | Numerical operations                      |
+| Scikit-learn     | Evaluation metrics and data splitting     |
+| Pandas           | Data and report processing                |
+| Matplotlib       | Confusion matrix visualization            |
+| Seaborn          | Visualization support                     |
+| tqdm             | Training progress bars                    |
 
 ---
 
@@ -277,16 +277,16 @@ Facial-Emotion-Recognition/
 
 The following are practical estimates, not strict hardware benchmarks.
 
-| Component | Minimum | Recommended |
-|---|---|---|
-| Operating system | Windows 10 64-bit | Windows 11 64-bit |
-| Processor | Modern dual-core CPU | Intel Core i5 / AMD Ryzen 5 or equivalent |
-| RAM | 8 GB | 16 GB or more |
-| Python | Compatible Python 3.x | Python 3.12 for a reproducible setup |
-| GPU | Not required | NVIDIA GPU with 4 GB or more VRAM |
-| Storage | 5 GB free for a complete environment | 10–15 GB free, excluding large dataset copies |
-| Camera | Required for live and capture modes | 720p webcam or better |
-| Internet | Required for initial installation | Stable broadband connection |
+| Component        | Minimum                              | Recommended                                   |
+| ---------------- | ------------------------------------ | --------------------------------------------- |
+| Operating system | Windows 10 64-bit                    | Windows 11 64-bit                             |
+| Processor        | Modern dual-core CPU                 | Intel Core i5 / AMD Ryzen 5 or equivalent     |
+| RAM              | 8 GB                                 | 16 GB or more                                 |
+| Python           | Compatible Python 3.x                | Python 3.12 for a reproducible setup          |
+| GPU              | Not required                         | NVIDIA GPU with 4 GB or more VRAM             |
+| Storage          | 5 GB free for a complete environment | 10–15 GB free, excluding large dataset copies |
+| Camera           | Required for live and capture modes  | 720p webcam or better                         |
+| Internet         | Required for initial installation    | Stable broadband connection                   |
 
 A dedicated GPU is **optional**. The project can run on CPU-only laptops, although live detection and training may be slower.
 
@@ -353,29 +353,29 @@ Storage usage depends on the operating system, package versions, dataset, cache 
 
 The following estimates are approximate planning ranges.
 
-| Component | Approximate disk space |
-|---|---:|
-| Git repository source code | 1–20 MB |
-| Python virtual environment basics | 50–200 MB |
-| PyTorch and Torchvision | 1–5 GB |
+| Component                                      |                                  Approximate disk space |
+| ---------------------------------------------- | ------------------------------------------------------: |
+| Git repository source code                     |                                                 1–20 MB |
+| Python virtual environment basics              |                                               50–200 MB |
+| PyTorch and Torchvision                        |                                                  1–5 GB |
 | CUDA-related libraries bundled with GPU wheels | Included in the GPU package total; varies significantly |
-| OpenCV | 50–300 MB |
-| Streamlit, WebRTC, and related packages | 100–500 MB |
-| Pillow, NumPy, Pandas, and other utilities | 100–700 MB |
-| Dataset | 100 MB–2 GB or more |
-| Trained checkpoints | A few MB to hundreds of MB, depending on architecture |
-| Training outputs and caches | 100 MB–several GB |
+| OpenCV                                         |                                               50–300 MB |
+| Streamlit, WebRTC, and related packages        |                                              100–500 MB |
+| Pillow, NumPy, Pandas, and other utilities     |                                              100–700 MB |
+| Dataset                                        |                                     100 MB–2 GB or more |
+| Trained checkpoints                            |   A few MB to hundreds of MB, depending on architecture |
+| Training outputs and caches                    |                                       100 MB–several GB |
 
 These ranges overlap because packages share dependencies. Do not add every upper bound and treat it as an exact requirement.
 
 ### Practical Storage Planning
 
-| Setup | Suggested free space |
-|---|---:|
-| Source code only | 100 MB |
-| CPU inference environment | 3–6 GB |
-| GPU inference environment | 5–10 GB |
-| Training environment with dataset and results | 10–15 GB or more |
+| Setup                                         | Suggested free space |
+| --------------------------------------------- | -------------------: |
+| Source code only                              |               100 MB |
+| CPU inference environment                     |               3–6 GB |
+| GPU inference environment                     |              5–10 GB |
+| Training environment with dataset and results |     10–15 GB or more |
 
 There is no fixed maximum storage requirement: dataset size, saved checkpoints, package caches, and repeated experiments can increase usage.
 
@@ -657,10 +657,10 @@ Typical evaluation outputs include a classification report and confusion matrix.
 
 The following results were obtained during development on the project's test dataset.
 
-| Metric | CNN | ResNet |
-|---|---:|---:|
-| Test accuracy | 63.62% | 65.48% |
-| Macro F1-score | 0.5963 | 0.6310 |
+| Metric            |    CNN | ResNet |
+| ----------------- | -----: | -----: |
+| Test accuracy     | 63.62% | 65.48% |
+| Macro F1-score    | 0.5963 | 0.6310 |
 | Weighted F1-score | 0.6298 | 0.6515 |
 
 ResNet performed better than the CNN in these experiments, although neither model is perfectly accurate.
@@ -671,21 +671,21 @@ Performance may differ when the model is tested on different people, lighting co
 
 ## 📚 Libraries and Dependencies
 
-| Library | Purpose |
-|---|---|
-| `torch` | Model inference and training |
-| `torchvision` | Image preprocessing |
-| `streamlit` | Interactive web interface |
-| `streamlit-webrtc` | Browser webcam streaming |
-| `av` | Video frame conversion |
-| `opencv-python` | Face detection and image operations |
-| `Pillow` | Image loading, resizing, and conversion |
-| `numpy` | Array operations |
-| `pandas` | Data processing |
-| `scikit-learn` | Classification metrics and data splitting |
-| `matplotlib` | Plotting |
-| `seaborn` | Confusion matrix visualization |
-| `tqdm` | Progress indicators |
+| Library            | Purpose                                   |
+| ------------------ | ----------------------------------------- |
+| `torch`            | Model inference and training              |
+| `torchvision`      | Image preprocessing                       |
+| `streamlit`        | Interactive web interface                 |
+| `streamlit-webrtc` | Browser webcam streaming                  |
+| `av`               | Video frame conversion                    |
+| `opencv-python`    | Face detection and image operations       |
+| `Pillow`           | Image loading, resizing, and conversion   |
+| `numpy`            | Array operations                          |
+| `pandas`           | Data processing                           |
+| `scikit-learn`     | Classification metrics and data splitting |
+| `matplotlib`       | Plotting                                  |
+| `seaborn`          | Confusion matrix visualization            |
+| `tqdm`             | Progress indicators                       |
 
 Additional packages are installed automatically as dependencies.
 
@@ -994,3 +994,5 @@ Add a `LICENSE` file before distributing this project publicly. Choose a license
 Built using Python, PyTorch, Torchvision, OpenCV, Streamlit, and Streamlit-WebRTC.
 
 **EmotionAI — Facial Expression Recognition Using Deep Learning**
+
+
